@@ -5055,7 +5055,7 @@ angular.module('ui.bootstrap.tooltip', ['ui.bootstrap.position', 'ui.bootstrap.s
             });
 
             function toggleTooltipBind() {
-	      if (!ttScope) return;
+	      if (!ttScope) return; // possible fix: Cannot read property 'popupDelay' of null
               if (!ttScope.isOpen) {
                 showTooltipBind();
               } else {
