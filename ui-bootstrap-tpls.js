@@ -5055,6 +5055,7 @@ angular.module('ui.bootstrap.tooltip', ['ui.bootstrap.position', 'ui.bootstrap.s
             });
 
             function toggleTooltipBind() {
+	      if (!ttScope) return;
               if (!ttScope.isOpen) {
                 showTooltipBind();
               } else {
